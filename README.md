@@ -3,7 +3,7 @@
 To install the extension, run:
 
 ```bash
-gh extension install gh-cli-for-education/gh-org-teams
+gh extension install yermulnik/gh-org-teams
 ```
 
 ## Usage
@@ -13,19 +13,13 @@ gh extension install gh-cli-for-education/gh-org-teams
 Usage:
   gh org-teams [-o|--ORG <ORG>] [-n|--NAME] [-u|--URL]
 
-By default the ORG is obtained using the command gh pwd.
-  For a better experience set these alias:
-    set alias pwd to:  !gh config get current-org
-    set alias cd to:   !gh config set current-org  2>/dev/null
+By default the ORG is obtained using the command \"gh org list --limit 1\".
 ```
 
 ## Examples
 
 ```bash
-  ✗ gh cd ULL-MII-SYTWS-2223
-  ✗ gh pwd
-  ULL-MII-SYTWS-2223 
-  ✗ gh org-teams | jless
+  ✗ gh org-teams
 ```
 
 ```
